@@ -13,12 +13,12 @@ BEGIN
     WHERE   bol_cur_id = id_curso
         AND bol_bnf_id = id_beneficiario
         AND bol_ano = b_ano
-        AND bol_ite_id = id_intituicao_ensino
+        AND bol_ins_id = id_intituicao_ensino
         AND bol_tip_id = id_tipo_bolsa;
     IF v_count = 0 THEN
         INSERT INTO bolsas (bol_ano
                         ,   bol_cur_id
-                        ,   bol_ite_id
+                        ,   bol_ins_id
                         ,   bol_bnf_id
                         ,   bol_tip_id) 
                     VALUES (b_ano
