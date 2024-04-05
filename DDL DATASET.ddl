@@ -42,7 +42,7 @@ CREATE TABLE bolsas (
     bol_id      NUMBER(6) NOT NULL,
     bol_ano     NUMBER NOT NULL,
     bol_cur_id  NUMBER NOT NULL,
-    bol_ite_id  NUMBER(6) NOT NULL,
+    bol_ins_id  NUMBER(6) NOT NULL,
     bol_bnf_id  NUMBER NOT NULL,
     bol_tip_id  NUMBER(6) NOT NULL
 );
@@ -56,7 +56,7 @@ COMMENT ON COLUMN bolsas.bol_ano IS
 COMMENT ON COLUMN bolsas.bol_cur_id IS
     'Armazena identificador unico do curso oferecido pela bolsa';
 
-COMMENT ON COLUMN bolsas.bol_ite_id IS
+COMMENT ON COLUMN bolsas.bol_ins_id IS
     'Armazena identificador unico da instituicao de ensino que ira ofertar a bolsa';
 
 COMMENT ON COLUMN bolsas.bol_bnf_id IS
